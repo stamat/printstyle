@@ -1,0 +1,44 @@
+{
+  "name": "printstyle",
+  "description": "Minimal, zero-dependency ANSI terminal styling with a micro template language.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "author": "Stamat <@stamat> (http://stamat.info)",
+  "homepage": "https://github.com/stamat/printstyle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stamat/printstyle.git"
+  },
+  "private": false,
+  "keywords": [
+    "ansi",
+    "colors",
+    "style",
+    "template",
+    "cli",
+    "zero-dependency"
+  ],
+  "scripts": {
+    "lint": "eslint ./index.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "eslint": "^9.39.3",
+    "jest": "^30.2.0",
+    "neostandard": "^0.12.2"
+  }
+}
